@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ota-test",
+    "name": "ota-test-dev",
     "slug": "ota-test",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 30000,
+      "checkAutomatically":"ON_ERROR_RECOVERY"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -23,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.gotec.otatest"
     },
     "web": {
       "favicon": "./assets/favicon.png"
